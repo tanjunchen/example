@@ -1,44 +1,85 @@
-FILL IN THE PR DESCRIPTION HERE
+## PR Description
 
-FIX #xxxx (*link existing issues this PR will resolve*)
+<!--
+Please provide a clear and concise description of this PR:
+- What problem does it solve?
+- Why is this change needed?
+- What is the overall approach?
+-->
 
-**BEFORE SUBMITTING, PLEASE READ THE CHECKLIST BELOW AND FILL IN THE DESCRIPTION ABOVE**
+FIX #xxxx  
+<!-- Link the existing issue(s) this PR resolves, e.g.:
+FIX #1234
+-->
 
 ---
 
-- [ ] Make sure the code changes pass the [pre-commit](https://github.com/baidu/vLLM-Kunlun/blob/main/CONTRIBUTING.md) checks.
-- [ ] Sign-off your commit by using <code>-s</code> when doing <code>git commit</code>
-- [ ] Try to classify PRs for easy understanding of the type of changes, such as `Feature`, `[Bugfix]`, `[Doc]`, `[CI]`, and `[Misc]`.
+## Checklist (Required)
+
+Before submitting this PR, please ensure that all the following items are completed:
+
+- [ ] All code changes pass the [`pre-commit`](https://github.com/baidu/vLLM-Kunlun/blob/main/CONTRIBUTING.md) checks.
+- [ ] Commits are signed off using `git commit -s`.
+- [ ] The PR title is properly classified (see below).
+
+---
+
+## PR Type
+
+Please prefix the PR title with one or more of the following labels to help reviewers quickly understand the nature of the change:
+
+- `[Feature]` – New features or enhancements (e.g. Attention, Communicator, Kernel, Worker, etc.)
+- `[Bugfix]` – Bug fixes
+- `[CI/Build]` – CI, build system, or infrastructure improvements
+- `[Doc]` – Documentation updates or fixes
+- `[Misc]` – Other changes that do not fit the above categories (use sparingly)
+
+> **Note:** If the PR spans multiple categories, include all relevant prefixes.
+
+---
 
 <details>
-<!-- inside this <details> section, markdown rendering does not work, so we use raw html here. -->
-<summary><b> Detailed Checklist (Click to Expand) </b></summary>
+<summary><b>Detailed Checklist (Click to Expand)</b></summary>
 
-<p>Thank you for your contribution to vLLM Kunlun! Before submitting the pull request, please ensure the PR meets the following criteria. This helps us maintain the code quality and improve the efficiency of the review process.</p>
+<p>Thank you for contributing to <b>vLLM Kunlun</b>!  
+To help us maintain high code quality and streamline the review process, please ensure your PR meets the following requirements.</p>
 
-<h3>PR Title and Classification</h3>
-<p>Please try to classify PRs for easy understanding of the type of changes. The PR title is prefixed appropriately to indicate the type of change. Please use one of the following:</p>
-<ul>
-    <li><code>[Feature]</code> for new features in the vLLM Kunlun (e.g., Attention, Communicator, Kernel, Worker, etc.).</li>
-    <li><code>[Bugfix]</code> for bug fixes.</li>
-    <li><code>[CI/Build]</code> for build or continuous integration improvements.</li>
-    <li><code>[Doc]</code> for documentation fixes and improvements.</li>
-    <li><code>[Misc]</code> for PRs that do not fit the above categories. Please use this sparingly.</li>
-</ul>
-<p><strong>Note:</strong> If the PR spans more than one category, please include all relevant prefixes.</p>
-
-<h3>Code Quality</h3>
-
-<p>The PR need to meet the following code quality standards:</p>
+<h3>1. Code Quality</h3>
 
 <ul>
-    <li>Pass all linter checks. Please use <code>pre-commit</code> to format your code. See <code>README.md</code> for installation.</li>
-    <li>The code need to be well-documented to ensure future contributors can easily understand the code.</li>
-    <li> Please include sufficient tests to ensure the change is stay correct and robust. This includes both unit tests and integration tests.</li>
+    <li>All linting and formatting checks pass (<code>pre-commit</code>).</li>
+    <li>The code is well-structured and sufficiently documented.</li>
+    <li>The change is designed with maintainability and readability in mind.</li>
 </ul>
 
-<h3>DCO and Signed-off-by</h3>
-<p>When contributing changes to this project, you must agree to the <a href="https://github.com/vllm-project/vllm/blob/main/DCO">DCO</a>. Commits must include a <code>Signed-off-by:</code> header which certifies agreement with the terms of the DCO.</p>
-<p>Using <code>-s</code> with <code>git commit</code> will automatically add this header.</p>
+<h3>2. Testing</h3>
 
-<h3>What to Expect for the Reviews</h3>
+<ul>
+    <li>Relevant unit tests are added or updated.</li>
+    <li>Integration tests are included when applicable.</li>
+    <li>Existing tests continue to pass.</li>
+</ul>
+
+<h3>3. DCO Compliance</h3>
+
+<p>This project follows the
+<a href="https://github.com/vllm-project/vllm/blob/main/DCO">Developer Certificate of Origin (DCO)</a>.</p>
+
+<ul>
+    <li>All commits include a <code>Signed-off-by:</code> line.</li>
+    <li>Use <code>git commit -s</code> to automatically add the sign-off.</li>
+</ul>
+
+<h3>4. Review Expectations</h3>
+
+<p>During the review process, maintainers may:</p>
+
+<ul>
+    <li>Request code refactoring or additional tests.</li>
+    <li>Ask for clarifications on design decisions.</li>
+    <li>Suggest performance, stability, or maintainability improvements.</li>
+</ul>
+
+<p>We appreciate your patience and collaboration throughout the review process!</p>
+
+</details>
